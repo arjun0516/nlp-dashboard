@@ -113,6 +113,8 @@ if text.strip():
                     "Type": (
                         "Punctuation"
                         if token.is_punct
+                        else "Number"
+                        if token.like_num
                         else "Word"
                     )
                 })
